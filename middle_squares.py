@@ -2,12 +2,12 @@
 
 import sys
 
-rounds = 10
-seed = 2959
+rounds = 200000
+seed = 100000
 
 for i, arg in enumerate(sys.argv):
   if (arg == '-h'):
-    print('middle_squares -r <rounds> -s <seed>\n\n<seed> - Must be a number by the power of 2 (2, 4, 8, 16)')
+    print('middle_squares -r <rounds> -s <seed>\n\n<seed> - Must be a dividable by 2 (2, 4, 8, 16)')
     exit()
   if (arg == '-r' or arg == '--rounds'):
     rounds = int(sys.argv[i+1])
